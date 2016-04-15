@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title MyShopOnline
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    link rel="shortcut icon" type="image/x-icon" href=""/
+    = stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track' => true
+    link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    = csrf_meta_tags
+
+  body class="hold-transition skin-blue sidebar-mini"
+    .wrapper
+
+      = render 'layouts/admin_header'
+      = render 'layouts/admin_left_sidebar'
+      .content-wrapper
+        / = flash_messages
+        section.content-header
+          h1
+            | Dashboard
+            small Control panel
+          ol.breadcrumb
+            li
+              a href="#"
+                i.fa.fa-dashboard
+                | Home
+            li.active Dashboar
+        = yield
+    = javascript_include_tag 'admin', 'data-turbolinks-track' => false
