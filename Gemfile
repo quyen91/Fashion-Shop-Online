@@ -65,11 +65,11 @@ group :development, :test do
 end
 
 
-group :test do
-  gem 'shoulda-matchers'
-  gem 'rspec-activemodel-mocks'
-  gem 'rspec-its'
-end
+# group :test do
+#   gem 'shoulda-matchers'
+#   gem 'rspec-activemodel-mocks'
+#   gem 'rspec-its'
+# end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
